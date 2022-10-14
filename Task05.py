@@ -12,14 +12,15 @@
 # Корень квадратный из суммы квадратов разности даст нам расстояние между точками
 
 
-xa = -2 #int(input('введите x для точки А ') )
-ya = 3 #int(input('введите y для точки А ') )
-xb = 4 #int(input('введите x для точки B ') )
-yb = 6 #int(input('введите y для точки B ') )
+xa = int(input('введите x для точки А ') )
+ya = int(input('введите y для точки А ') )
+xb = int(input('введите x для точки B ') )
+yb = int(input('введите y для точки B ') )
 
 distance1 = (xb-xa)**2+(yb-ya)**2
 import math
 distance2 = math.sqrt(distance1)
+print(f'A ({xa}, {ya}); B({xb}, {yb}) ->', end =" ")
 print(round(distance2, 2))
 #print(type(distance2))
 
